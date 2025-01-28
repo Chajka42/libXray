@@ -20,6 +20,11 @@ jobs:
       run: |
         git clone --depth=1 https://github.com/XTLS/Xray-core.git ./xray-core
 
+    # Move Xray-core to the expected path
+    - name: Move Xray-core to expected path
+      run: |
+        mv ./xray-core ../Xray-core
+
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
