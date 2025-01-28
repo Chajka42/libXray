@@ -29,5 +29,4 @@ jobs:
     # Build the XCFramework
     - name: Build LibXray.xcframework
       run: |
-        mkdir -p build
-        gomobile bind -target ios,iossimulator,macos -iosversion 15.0 -o build/LibXray.xcframework
+        gomobile bind -target ios,iossimulator,macos -iosversion 15.0
